@@ -1,0 +1,68 @@
+# Description: GCC compiler for target arm-linux-gnu
+# URL: http://gcc.gnu.org
+# Depends on: libgmp libmpfr binutils-arm-linux-gnu glibc-arm-linux-gnu
+
+name=gcc-arm-linux-gnu
+version=4.4.2
+release=1
+source=(https://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.bz2)
+
+build() {
+  sed -i 's|REVISION|REVISION " (CRUX-ARM)"|' gcc-$version/gcc/version.c
+
+  mkdir build
+  cd build
+
+  unset CFLAGS
+  unset CXXFLAGS
+  unset CC
+
+  CFLAGS='-fgnu89-inline -g -O2' \
+  CXXFLAGS='-fgnu89-inline -g -O2' \
+  AR=ar LDFLAGS="-Wl,-rpath,/usr/lib" \
+  ../gcc-$version/configure \
+    --build=$(echo $MACHTYPE | sed "s/$$(echo $MACHTYPE | cut -d- -f2)/cross/") \
+    --host=$(echo $MACHTYPE | sed "s/$$(echo $MACHTYPE | cut -d- -f2)/cross/") \
+    --target=arm-linux-gnu \
+    --with-headers=/usr/arm-linux-gnu/include \
+    --disable-multilib \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    --disable-nls \
+    --enable-languages=c,c++ \
+    --enable-__cxa_atexit \
+    --enable-c99 \
+    --enable-long-long \
+    --enable-threads=posix \
+
+
+  AS_FOR_TARGET="arm-linux-gnu-as" \
+  LD_FOR_TARGET="arm-linux-gnu-ld" \
+  make -j1
+  make DESTDIR=$PKG -j1 install
+
+  rm -f $PKG/usr/bin/arm-linux-gnu-gcc-{ar,nm,ranlib}
+  rm -f $PKG/usr/lib/libiberty.a
+
+  rm -rf $PKG/usr/info $PKG/usr/share/info $PKG/usr/man/man7
+
+  arm-linux-gnu-strip --strip-debug \
+    $PKG/usr/arm-linux-gnu/lib/libgomp.a \
+    $PKG/usr/arm-linux-gnu/lib/libmudflap.a \
+    $PKG/usr/arm-linux-gnu/lib/libmudflapth.a \
+    $PKG/usr/arm-linux-gnu/lib/libssp.a \
+    $PKG/usr/arm-linux-gnu/lib/libssp_nonshared.a \
+    $PKG/usr/arm-linux-gnu/lib/libstdc++.a \
+    $PKG/usr/arm-linux-gnu/lib/libsupc++.a \
+    $PKG/usr/lib/gcc/arm-linux-gnu/$version/libgcc.a \
+    $PKG/usr/lib/gcc/arm-linux-gnu/$version/libgcc_eh.a \
+    $PKG/usr/lib/gcc/arm-linux-gnu/$version/libgcov.a
+
+  arm-linux-gnu-strip --strip-unneeded \
+    $PKG/usr/arm-linux-gnu/lib/libgcc_s.so.1 \
+    $PKG/usr/arm-linux-gnu/lib/libgomp.so.1.0.0 \
+    $PKG/usr/arm-linux-gnu/lib/libmudflap.so.0.0.0 \
+    $PKG/usr/arm-linux-gnu/lib/libmudflapth.so.0.0.0 \
+    $PKG/usr/arm-linux-gnu/lib/libssp.so.0.0.0 \
+    $PKG/usr/arm-linux-gnu/lib/libstdc++.so.6.0.13
+}
