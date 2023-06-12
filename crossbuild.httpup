@@ -1,0 +1,8 @@
+#
+# /etc/ports/crossbuild.httpup: Unofficial CRUX's ports to cross build for other architechtures
+#
+
+ROOT_DIR=/usr/ports/crossbuild
+URL=https://raw.githubusercontent.com/sepen/crux-ports-crossbuild/main/
+
+# End of file
