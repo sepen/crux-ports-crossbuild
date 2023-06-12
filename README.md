@@ -1,8 +1,9 @@
-# crux-ports-toolchains
-Unofficial CRUX-ARM ports to work with toolchains
+# crux-ports-crossbuild
 
-To use these ports, download the `toolchains.httpup` file to `/etc/ports`
+Unofficial CRUX's ports to cross build for other architechtures
+
+To use these ports, download the `crossbuild.httpup` file to `/etc/ports`
 ```
-$ sudo wget -P /etc/ports https://raw.githubusercontent.com/sepen/crux-ports-toolchains/main/toolchains.httpup
-$ sudo ports -u toolchains
+$ sudo wget -P /etc/ports https://raw.githubusercontent.com/sepen/crux-ports-crossbuild/main/crossbuild.httpup
+$ sudo ports -u crossbuild
 ```
