@@ -2,11 +2,18 @@
 
 Unofficial CRUX's ports to cross build for other architechtures
 
-To use these ports, download the `crossbuild.httpup` file to `/etc/ports`
+To use these ports, select a branch (for example 3.7) and download the `crossbuild.httpup` file to `/etc/ports`
 ```
-$ sudo wget -P /etc/ports https://raw.githubusercontent.com/sepen/crux-ports-crossbuild/main/crossbuild.httpup
+$ sudo wget -P /etc/ports https://raw.githubusercontent.com/sepen/crux-ports-crossbuild/3.7/crossbuild.httpup
 $ sudo ports -u crossbuild
 ```
+
+The goal of this repo is to maintain a list of ports useful for cross-compilation of different systems,
+to facilitate tasks such as compiling kernels for small devices where native compilation is unsustainable or impossible.
+
+If you don't have a CRUX host or if what you are looking for is to obtain a complete toolchain then visit https://github.com/crux-arm and clone the toolchain you need (for example: https://github.com/crux-arm/crux-toolchain-arm-linux-gnueabihf)
+
+Current status:
 
 | GNU Triplet | Linux Headers | Binutils | Glibc | GCC | Description |
 |-------------|---------------|----------|-------| ----|-------------|
