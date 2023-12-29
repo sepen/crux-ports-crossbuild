@@ -1,6 +1,6 @@
 # Description: C library for target arm-linux-gnu
 # URL: http://www.gnu.org/software/libc/
-# Depends on: binutils-arm-linux-gnu static-gcc-arm-linux-gnu
+# Depends on: binutils-arm-linux-gnu static-gcc-arm-linux-gnu make43
 
 name=glibc-arm-linux-gnu
 version=2.11
@@ -54,8 +54,9 @@ __EOF__
     --with-tls \
     --with-__thread
 
-  make
-  make install_root=$PKG install 
+  # Versions of GNU make newer than 4.4 trigger a hang in versions of glibc older than 2.31
+  make43
+  make43 install_root=$PKG install
 
   rm -rf $PKG/usr/arm-linux-gnu/share/{info,local}
 
