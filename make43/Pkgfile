@@ -8,8 +8,8 @@ release=1
 source=(https://ftpmirror.gnu.org/gnu/make/make-$version.tar.lz)
 
 build() {
-	cd make-$version
-	./configure --prefix=/usr
-	make
+  cd make-$version
+  ./configure --prefix=/usr
+  make
   install -D -m 0755 make $PKG/usr/bin/$name
 }
