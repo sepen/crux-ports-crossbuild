@@ -735,6 +735,8 @@ drwxr-xr-x	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/finclude/
 drwxr-xr-x	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include-fixed/
 -rw-r--r--	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include-fixed/README
 -rw-r--r--	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include-fixed/limits.h
+drwxr-xr-x	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include-fixed/linux/
+-rw-r--r--	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include-fixed/linux/a.out.h
 -rw-r--r--	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include-fixed/syslimits.h
 drwxr-xr-x	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include/
 -rw-r--r--	root/root	usr/lib/gcc/arm-linux-gnu/4.4.2/include/arm_neon.h
