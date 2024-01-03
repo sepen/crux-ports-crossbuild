@@ -1,6 +1,6 @@
 # Description: Static GCC compiler for target arm-linux-gnu
 # URL: http://gcc.gnu.org
-# Depends on: libgmp libmpfr
+# Depends on: libmpfr binutils-arm-linux-gnu
 
 name=static-gcc-arm-linux-gnu
 version=4.4.2
