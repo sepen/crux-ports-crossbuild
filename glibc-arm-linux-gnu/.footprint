@@ -18,8 +18,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/bin/
 drwxr-xr-x	root/root	usr/arm-linux-gnu/etc/
 -rw-r--r--	root/root	usr/arm-linux-gnu/etc/rpc
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/_G_config.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/a.out.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/aio.h
@@ -36,8 +34,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/arpa/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/arpa/telnet.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/arpa/tftp.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/asm-generic/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/asm-generic/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/asm-generic/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm-generic/auxvec.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm-generic/bitsperlong.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm-generic/errno-base.h
@@ -73,8 +69,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/asm-generic/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm-generic/ucontext.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm-generic/unistd.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/asm/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/asm/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/asm/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm/a.out.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm/auxvec.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/asm/bitsperlong.h
@@ -219,20 +213,19 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/bits/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/dirent.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/dlfcn.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/drm/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/drm_mode.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/drm_sarea.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/i810_drm.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/i830_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/i915_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/mga_drm.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/nouveau_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/r128_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/radeon_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/savage_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/sis_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/via_drm.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/drm/vmwgfx_drm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/elf.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/endian.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/envz.h
@@ -271,8 +264,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/gnu/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/limits.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/link.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/a.out.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/acct.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/adb.h
@@ -310,25 +301,26 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/baycom.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/bfs_fs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/binfmts.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/blk_types.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/blkpg.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/blktrace_api.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/bpqether.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/bsg.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/byteorder/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/byteorder/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/byteorder/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/byteorder/big_endian.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/byteorder/little_endian.h
+drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/caif/
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/caif/caif_socket.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/caif/if_caif.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/can.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/can/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/can/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/can/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/can/bcm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/can/error.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/can/netlink.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/can/raw.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/capability.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/capi.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/cciss_defs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/cciss_ioctl.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/cdk.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/cdrom.h
@@ -358,8 +350,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/can/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/dn.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/dqblk_xfs.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/dvb/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/dvb/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/dvb/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/dvb/audio.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/dvb/ca.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/dvb/dmx.h
@@ -381,6 +371,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/dvb/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/ext2_fs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fadvise.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/falloc.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fanotify.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fb.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fcntl.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fd.h
@@ -392,6 +383,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/dvb/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/firewire-constants.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/flat.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fs.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fsl_hypervisor.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/fuse.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/futex.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/gameport.h
@@ -400,11 +392,8 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/dvb/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/genetlink.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/gfs2_ondisk.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/gigaset_dev.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/hayesesp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/hdlc.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/hdlc/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/hdlc/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/hdlc/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/hdlc/ioctl.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/hdlcdrv.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/hdreg.h
@@ -422,6 +411,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/hdlc/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_addr.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_addrlabel.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_alg.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_arcnet.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_arp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_bonding.h
@@ -449,6 +439,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/hdlc/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_tun.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_tunnel.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_vlan.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/if_x25.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/igmp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/in.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/in6.h
@@ -471,8 +462,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/hdlc/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/irqnr.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/isdn.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/isdn/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/isdn/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/isdn/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/isdn/capicmd.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/isdn_divertif.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/isdn_ppp.h
@@ -489,6 +478,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/isdn/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/kernelcapi.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/keyboard.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/keyctl.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/l2tp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/limits.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/llc.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/loop.h
@@ -497,11 +487,14 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/isdn/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/major.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/map_to_7segment.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/matroxfb.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/media.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/mempolicy.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/meye.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/mii.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/minix_fs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/mman.h
+drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/mmc/
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/mmc/ioctl.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/mmtimer.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/mqueue.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/mroute.h
@@ -518,11 +511,15 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/isdn/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/neighbour.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/net.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/net_dropmon.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/net_tstamp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netdevice.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/.install (EMPTY)
+drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter/ipset/
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/ipset/ip_set.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/ipset/ip_set_bitmap.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/ipset/ip_set_hash.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/ipset/ip_set_list.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/nf_conntrack_common.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/nf_conntrack_ftp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/nf_conntrack_sctp.h
@@ -534,10 +531,14 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/nfnetlink_log.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/nfnetlink_queue.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/x_tables.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_AUDIT.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_CHECKSUM.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_CLASSIFY.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_CONNMARK.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_CONNSECMARK.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_CT.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_DSCP.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_IDLETIMER.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_LED.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_MARK.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_NFLOG.h
@@ -546,19 +547,24 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_SECMARK.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_TCPMSS.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_TCPOPTSTRIP.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_TEE.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_TPROXY.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_addrtype.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_cluster.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_comment.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_connbytes.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_connlimit.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_connmark.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_conntrack.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_cpu.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_dccp.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_devgroup.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_dscp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_esp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_hashlimit.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_helper.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_iprange.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_ipvs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_length.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_limit.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_mac.h
@@ -574,6 +580,8 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_realm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_recent.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_sctp.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_set.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_socket.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_state.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_statistic.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_string.h
@@ -583,24 +591,22 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter/xt_u32.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_arp.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter_arp/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_arp/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_arp/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_arp/arp_tables.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_arp/arpt_mangle.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_802_3.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_among.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_arp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_arpreply.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_ip.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_ip6.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_limit.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_log.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_mark_m.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_mark_t.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_nat.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_nflog.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_pkttype.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_redirect.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/ebt_stp.h
@@ -610,8 +616,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter_bridge/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_decnet.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/ip_queue.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/ip_tables.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/ipt_CLUSTERIP.h
@@ -628,8 +632,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv4/ipt_ttl.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6/ip6_tables.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6/ip6t_HL.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6/ip6t_LOG.h
@@ -653,8 +655,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/netfilter_ipv6/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nfs_mount.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nfsacl.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/nfsd/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nfsd/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nfsd/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nfsd/const.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nfsd/debug.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nfsd/export.h
@@ -664,6 +664,8 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/nfsd/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nl80211.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nubus.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/nvram.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/omap3isp.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/omapfb.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/oom.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/param.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/parport.h
@@ -687,18 +689,18 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/nfsd/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/ppp_defs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/pps.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/prctl.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/ptp_clock.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/ptrace.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/qnx4_fs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/qnxtypes.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/quota.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/radeonfb.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/raid/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/raid/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/raid/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/raid/md_p.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/raid/md_u.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/random.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/raw.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/rds.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/reboot.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/reiserfs_fs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/reiserfs_xattr.h
@@ -713,6 +715,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/raid/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sched.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/screen_info.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sdla.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/securebits.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/selinux_netlink.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sem.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/serial.h
@@ -722,10 +725,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/raid/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/shm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/signal.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/signalfd.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/smb.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/smb_fs.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/smb_mount.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/smbno.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/snmp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/socket.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sockios.h
@@ -735,15 +734,11 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/raid/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sound.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/soundcard.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/spi/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/spi/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/spi/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/spi/spidev.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/stat.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/stddef.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/string.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/sunrpc/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sunrpc/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sunrpc/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sunrpc/debug.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/suspend_ioctls.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/swab.h
@@ -751,8 +746,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/sunrpc/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/sysctl.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/taskstats.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/tc_act/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/.install (EMPTY)
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/tc_csum.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/tc_gact.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/tc_ipt.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/tc_mirred.h
@@ -760,8 +754,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/tc_act/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/tc_pedit.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_act/tc_skbedit.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/tc_ematch/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_ematch/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_ematch/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_ematch/tc_em_cmp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_ematch/tc_em_meta.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/tc_ematch/tc_em_nbyte.h
@@ -786,24 +778,25 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/tc_ematch/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/un.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/unistd.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/usb/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/audio.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/cdc.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/ch11.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/ch9.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/functionfs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/g_printer.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/gadgetfs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/midi.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/tmc.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usb/vstusb.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/usbdevice_fs.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/utime.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/utsname.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/uvcvideo.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/v4l2-mediabus.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/v4l2-subdev.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/version.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/veth.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/videodev.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/vhost.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/videodev2.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/videotext.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/virtio_9p.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/virtio_balloon.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/virtio_blk.h
@@ -820,8 +813,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/usb/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/watchdog.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/wimax.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/wimax/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/wimax/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/wimax/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/wimax/i2400m.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/wireless.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/linux/x25.h
@@ -836,8 +827,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/linux/wimax/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/monetary.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/mqueue.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/mtd/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/mtd/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/mtd/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/mtd/inftl-user.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/mtd/mtd-abi.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/mtd/mtd-user.h
@@ -904,9 +893,12 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/protocols/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/pty.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/pwd.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/rdma/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/.install (EMPTY)
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/ib_user_cm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/ib_user_mad.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/ib_user_sa.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/ib_user_verbs.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/rdma_netlink.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/rdma/rdma_user_cm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/re_comp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/regex.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/regexp.h
@@ -958,8 +950,11 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/rpcsvc/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/rpcsvc/ypupd.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/sched.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/scsi/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/.install (EMPTY)
+drwxr-xr-x	root/root	usr/arm-linux-gnu/include/scsi/fc/
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/fc/fc_els.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/fc/fc_fs.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/fc/fc_gs.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/fc/fc_ns.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/scsi.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/scsi_bsg_fc.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/scsi/scsi_ioctl.h
@@ -973,8 +968,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/scsi/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/shadow.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/signal.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/sound/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/asequencer.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/asound.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/asound_fm.h
@@ -983,7 +976,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/sound/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/hdspm.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/sb16_csp.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/sfnt_info.h
--rw-r--r--	root/root	usr/arm-linux-gnu/include/sound/sscape_ioctl.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/spawn.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/stab.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/stdint.h
@@ -1092,8 +1084,6 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/sys/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/utmpx.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/values.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/video/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/video/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/video/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/video/edid.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/video/sisfb.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/video/uvesafb.h
@@ -1102,9 +1092,8 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/include/video/
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/wctype.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/wordexp.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/include/xen/
--rw-r--r--	root/root	usr/arm-linux-gnu/include/xen/..install.cmd
--rw-r--r--	root/root	usr/arm-linux-gnu/include/xen/.install (EMPTY)
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/xen/evtchn.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/include/xen/privcmd.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/include/xlocale.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/Mcrt1.o
@@ -1363,85 +1352,85 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gconv/
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gconv/libKSC.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcrt1.o
 drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/getconf/
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/ld-2.11.so
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/ld-linux.so.2 -> ld-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libBrokenLocale-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/ld-2.11.3.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/ld-linux.so.2 -> ld-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libBrokenLocale-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libBrokenLocale.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libBrokenLocale.so -> libBrokenLocale.so.1
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libBrokenLocale.so.1 -> libBrokenLocale-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libBrokenLocale.so.1 -> libBrokenLocale-2.11.3.so
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libSegFault.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libanl-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libanl-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libanl.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libanl.so -> libanl.so.1
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libanl.so.1 -> libanl-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libanl.so.1 -> libanl-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libbsd-compat.a
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libc-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libc-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libc.a
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libc.so
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libc.so.6 -> libc-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libc.so.6 -> libc-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libc_nonshared.a
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libcidn-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libcidn-2.11.3.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libcidn.so -> libcidn.so.1
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libcidn.so.1 -> libcidn-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libcrypt-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libcidn.so.1 -> libcidn-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libcrypt-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libcrypt.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libcrypt.so -> libcrypt.so.1
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libcrypt.so.1 -> libcrypt-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libdl-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libcrypt.so.1 -> libcrypt-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libdl-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libdl.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libdl.so -> libdl.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libdl.so.2 -> libdl-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libdl.so.2 -> libdl-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libg.a
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libieee.a
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libm-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libm-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libm.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libm.so -> libm.so.6
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libm.so.6 -> libm-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libm.so.6 -> libm-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libmcheck.a
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libmemusage.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnsl-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnsl-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libnsl.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnsl.so -> libnsl.so.1
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnsl.so.1 -> libnsl-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_compat-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnsl.so.1 -> libnsl-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_compat-2.11.3.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_compat.so -> libnss_compat.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_compat.so.2 -> libnss_compat-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_dns-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_compat.so.2 -> libnss_compat-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_dns-2.11.3.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_dns.so -> libnss_dns.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_dns.so.2 -> libnss_dns-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_files-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_dns.so.2 -> libnss_dns-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_files-2.11.3.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_files.so -> libnss_files.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_files.so.2 -> libnss_files-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_hesiod-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_files.so.2 -> libnss_files-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_hesiod-2.11.3.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_hesiod.so -> libnss_hesiod.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_hesiod.so.2 -> libnss_hesiod-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_nis-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_hesiod.so.2 -> libnss_hesiod-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_nis-2.11.3.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_nis.so -> libnss_nis.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_nis.so.2 -> libnss_nis-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_nisplus-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_nis.so.2 -> libnss_nis-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libnss_nisplus-2.11.3.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_nisplus.so -> libnss_nisplus.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_nisplus.so.2 -> libnss_nisplus-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libnss_nisplus.so.2 -> libnss_nisplus-2.11.3.so
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libpcprofile.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libpthread-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libpthread-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libpthread.a
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libpthread.so
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libpthread.so.0 -> libpthread-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libpthread.so.0 -> libpthread-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libpthread_nonshared.a
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libresolv-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libresolv-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libresolv.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libresolv.so -> libresolv.so.2
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libresolv.so.2 -> libresolv-2.11.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/librt-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libresolv.so.2 -> libresolv-2.11.3.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/librt-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/librt.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/librt.so -> librt.so.1
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/librt.so.1 -> librt-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/librt.so.1 -> librt-2.11.3.so
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libthread_db-1.0.so
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libthread_db.so -> libthread_db.so.1
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libthread_db.so.1 -> libthread_db-1.0.so
--rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libutil-2.11.so
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/libutil-2.11.3.so
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/libutil.a
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libutil.so -> libutil.so.1
-lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libutil.so.1 -> libutil-2.11.so
+lrwxrwxrwx	root/root	usr/arm-linux-gnu/lib/libutil.so.1 -> libutil-2.11.3.so
 -rwsr-xr-x	root/root	usr/arm-linux-gnu/lib/pt_chown
 drwxr-xr-x	root/root	usr/arm-linux-gnu/sbin/
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/sbin/iconvconfig
@@ -1451,615 +1440,3 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/sbin/
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/sbin/sln
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/sbin/zdump
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/sbin/zic
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/i18n/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/i18n/charmaps/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ANSI_X3.110-1983.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ANSI_X3.4-1968.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ARMSCII-8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ASMO_449.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/BIG5-HKSCS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/BIG5.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/BRF.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/BS_4730.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/BS_VIEWDATA.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP10007.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1125.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1250.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1251.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1252.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1253.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1254.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1255.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1256.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1257.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP1258.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP737.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP775.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CP949.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CSA_Z243.4-1985-1.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CSA_Z243.4-1985-2.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CSA_Z243.4-1985-GR.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CSN_369103.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/CWI.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/DEC-MCS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/DIN_66003.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/DS_2089.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-AT-DE-A.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-AT-DE.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-CA-FR.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-DK-NO-A.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-DK-NO.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-ES-A.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-ES-S.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-ES.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-FI-SE-A.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-FI-SE.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-FR.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-IS-FRISS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-IT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-PT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-UK.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EBCDIC-US.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ECMA-CYRILLIC.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ES.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ES2.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EUC-JISX0213.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EUC-JP-MS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EUC-JP.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EUC-KR.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/EUC-TW.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GB18030.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GB2312.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GBK.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GB_1988-80.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GEORGIAN-ACADEMY.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GEORGIAN-PS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GOST_19768-74.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GREEK-CCITT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GREEK7-OLD.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/GREEK7.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/HP-GREEK8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/HP-ROMAN8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/HP-ROMAN9.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/HP-THAI8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/HP-TURKISH8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM037.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM038.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1004.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1026.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1047.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1124.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1129.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1132.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1133.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1160.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1161.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1162.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1163.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM1164.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM256.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM273.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM274.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM275.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM277.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM278.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM280.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM281.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM284.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM285.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM290.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM297.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM420.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM423.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM424.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM437.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM500.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM850.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM851.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM852.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM855.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM856.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM857.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM860.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM861.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM862.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM863.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM864.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM865.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM866.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM866NAV.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM868.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM869.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM870.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM871.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM874.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM875.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM880.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM891.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM903.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM904.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM905.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM918.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IBM922.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IEC_P27-1.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/INIS-8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/INIS-CYRILLIC.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/INIS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/INVARIANT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISIRI-3342.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-1.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-10.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-11.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-13.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-14.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-15.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-16.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-2.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-3.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-4.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-5.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-6.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-7.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-9.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-8859-9E.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-IR-197.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-IR-209.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO-IR-90.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_10367-BOX.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_10646.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_11548-1.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_2033-1983.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_5427-EXT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_5427.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_5428.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_646.BASIC.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_646.IRV.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_6937-2-25.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_6937-2-ADD.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_6937.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_8859-1,GL.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/ISO_8859-SUPP.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/IT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6220-1969-JP.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6220-1969-RO.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6229-1984-A.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6229-1984-B-ADD.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6229-1984-B.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6229-1984-HAND-ADD.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6229-1984-HAND.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_C6229-1984-KANA.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JIS_X0201.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JOHAB.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JUS_I.B1.002.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JUS_I.B1.003-MAC.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/JUS_I.B1.003-SERB.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/KOI-8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/KOI8-R.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/KOI8-RU.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/KOI8-T.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/KOI8-U.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/KSC5636.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/LATIN-GREEK-1.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/LATIN-GREEK.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MAC-CENTRALEUROPE.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MAC-CYRILLIC.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MAC-IS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MAC-SAMI.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MAC-UK.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MACINTOSH.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MIK.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/MSZ_7795.3.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NATS-DANO-ADD.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NATS-DANO.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NATS-SEFI-ADD.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NATS-SEFI.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NC_NC00-10.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NEXTSTEP.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NF_Z_62-010.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NF_Z_62-010_1973.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NS_4551-1.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/NS_4551-2.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/PT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/PT154.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/PT2.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/RK1048.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/SAMI-WS2.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/SAMI.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/SEN_850200_B.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/SEN_850200_C.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/SHIFT_JIS.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/SHIFT_JISX0213.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/T.101-G2.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/T.61-7BIT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/T.61-8BIT.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/TCVN5712-1.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/TIS-620.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/TSCII.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/UTF-8.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/VIDEOTEX-SUPPL.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/VISCII.gz
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/charmaps/WINDOWS-31J.gz
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/i18n/locales/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/POSIX
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/aa_DJ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/aa_ER
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/aa_ER@saaho
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/aa_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/af_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/am_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/an_ES
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_AE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_BH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_DZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_EG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_IQ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_JO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_KW
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_LB
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_LY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_MA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_OM
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_QA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_SA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_SD
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_SY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_TN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ar_YE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/as_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ast_ES
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/az_AZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/be_BY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/be_BY@latin
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ber_DZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ber_MA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/bg_BG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/bn_BD
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/bn_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/bo_CN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/bo_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/br_FR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/br_FR@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/bs_BA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/byn_ER
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ca_AD
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ca_ES
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ca_ES@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ca_FR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ca_IT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/crh_UA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/cs_CZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/csb_PL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/cy_GB
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/da_DK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_AT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_AT@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_BE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_BE@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_CH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_DE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_DE@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_LU
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/de_LU@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/dv_MV
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/dz_BT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/el_CY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/el_GR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/el_GR@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_AG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_AU
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_BW
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_CA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_DK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_GB
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_HK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_IE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_IE@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_NG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_NZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_PH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_SG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_US
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/en_ZW
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_AR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_BO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_CL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_CO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_CR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_DO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_EC
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_ES
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_ES@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_GT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_HN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_MX
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_NI
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_PA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_PE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_PR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_PY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_SV
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_US
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_UY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/es_VE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/et_EE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/eu_ES
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/eu_ES@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fa_IR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fi_FI
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fi_FI@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fil_PH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fo_FO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_BE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_BE@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_CA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_CH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_FR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_FR@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_LU
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fr_LU@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fur_IT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fy_DE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/fy_NL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ga_IE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ga_IE@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gd_GB
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gez_ER
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gez_ER@abegede
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gez_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gez_ET@abegede
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gl_ES
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gl_ES@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gu_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/gv_GB
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ha_NG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/he_IL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/hi_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/hne_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/hr_HR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/hsb_DE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ht_HT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/hu_HU
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/hy_AM
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/i18n
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/id_ID
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ig_NG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ik_CA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/is_IS
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/iso14651_t1
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/iso14651_t1_common
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/iso14651_t1_pinyin
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/it_CH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/it_IT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/it_IT@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/iu_CA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/iw_IL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ja_JP
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ka_GE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/kk_KZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/kl_GL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/km_KH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/kn_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ko_KR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ks_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ks_IN@devanagari
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ku_TR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/kw_GB
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ky_KG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/lg_UG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/li_BE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/li_NL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/lo_LA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/lt_LT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/lv_LV
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/mai_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/mg_MG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/mi_NZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/mk_MK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ml_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/mn_MN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/mr_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ms_MY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/mt_MT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/my_MM
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nan_TW@latin
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nb_NO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nds_DE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nds_NL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ne_NP
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nl_AW
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nl_BE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nl_BE@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nl_NL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nl_NL@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nn_NO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nr_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/nso_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/oc_FR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/om_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/om_KE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/or_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/pa_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/pa_PK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/pap_AN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/pl_PL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ps_AF
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/pt_BR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/pt_PT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/pt_PT@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ro_RO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ru_RU
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ru_UA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/rw_RW
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sa_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sc_IT
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sd_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sd_IN@devanagari
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/se_NO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/shs_CA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/si_LK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sid_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sk_SK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sl_SI
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/so_DJ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/so_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/so_KE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/so_SO
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sq_AL
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sr_ME
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sr_RS
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sr_RS@latin
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ss_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/st_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sv_FI
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sv_FI@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/sv_SE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ta_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/te_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tg_TJ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/th_TH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ti_ER
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ti_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tig_ER
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tk_TM
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tl_PH
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tn_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tr_CY
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tr_TR
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_circle
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_cjk_compat
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_cjk_variants
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_combining
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_compat
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_font
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_fraction
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_hangul
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_narrow
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_neutral
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_small
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/translit_wide
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ts_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tt_RU
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/tt_RU@iqtelif
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ug_CN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/uk_UA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ur_IN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ur_PK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/uz_UZ
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/uz_UZ@cyrillic
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/ve_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/vi_VN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/wa_BE
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/wa_BE@euro
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/wal_ET
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/wo_SN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/xh_ZA
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/yi_US
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/yo_NG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/zh_CN
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/zh_HK
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/zh_SG
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/zh_TW
--rw-r--r--	root/root	usr/arm-linux-gnu/share/i18n/locales/zu_ZA
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/be/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/be/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/be/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/bg/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/bg/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/bg/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ca/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ca/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/ca/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/cs/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/cs/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/cs/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/da/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/da/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/da/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/de/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/de/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/de/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/el/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/el/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/el/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/en_GB/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/en_GB/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/en_GB/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/es/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/es/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/es/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/fi/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/fi/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/fi/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/fr/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/fr/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/fr/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/gl/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/gl/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/gl/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/hr/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/hr/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/hr/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/hu/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/hu/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/hu/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/id/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/id/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/id/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/it/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/it/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/it/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ja/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ja/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/ja/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ko/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ko/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/ko/LC_MESSAGES/libc.mo
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/locale.alias
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/lt/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/lt/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/lt/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/nb/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/nb/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/nb/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/nl/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/nl/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/nl/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/pl/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/pl/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/pl/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/pt_BR/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/pt_BR/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/pt_BR/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ru/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/ru/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/ru/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/rw/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/rw/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/rw/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/sk/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/sk/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/sk/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/sv/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/sv/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/sv/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/tr/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/tr/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/tr/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/vi/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/vi/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/vi/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/zh_CN/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/zh_CN/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/zh_CN/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/zh_TW/
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/locale/zh_TW/LC_MESSAGES/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/locale/zh_TW/LC_MESSAGES/libc.mo
-drwxr-xr-x	root/root	usr/arm-linux-gnu/share/zoneinfo/
--rw-r--r--	root/root	usr/arm-linux-gnu/share/zoneinfo/iso3166.tab
--rw-r--r--	root/root	usr/arm-linux-gnu/share/zoneinfo/zone.tab

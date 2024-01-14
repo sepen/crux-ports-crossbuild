@@ -3,6 +3,6 @@
 #
 
 ROOT_DIR=/usr/ports/crossbuild
-URL=https://raw.githubusercontent.com/sepen/crux-ports-crossbuild/main/
+URL=https://raw.githubusercontent.com/sepen/crux-ports-crossbuild/3.7/
 
 # End of file
