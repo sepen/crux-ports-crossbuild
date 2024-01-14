@@ -3,24 +3,26 @@
 # Depends on: binutils-arm-linux-gnu static-gcc-arm-linux-gnu make43
 
 name=glibc-arm-linux-gnu
-version=2.11
+version=2.11.3
 release=1
-source=(ftp://ftp.gnu.org/gnu/glibc/glibc-$version.tar.bz2 \
-        ftp://ftp.gnu.org/gnu/glibc/glibc-ports-$version.tar.bz2 \
-        https://mirrors.edge.kernel.org/pub/linux/kernel/v2.6/linux-2.6.32.tar.bz2 \
+source=(https://ftp.gnu.org/gnu/glibc/glibc-$version.tar.xz \
+        https://ftp.gnu.org/gnu/glibc/glibc-ports-${version%.*}.tar.bz2 \
+        https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.1.10.tar.bz2 \
         fix-versions-in-configure.patch)
 
+target=arm-linux-gnu
+
 build() {
-  # kernel headers (2.6.32)
-  make -C $SRC/linux-2.6.32 ARCH=arm mrproper
-  make -C $SRC/linux-2.6.32 ARCH=arm headers_check
-  make -C $SRC/linux-2.6.32 ARCH=arm INSTALL_HDR_PATH=$PKG/usr/arm-linux-gnu headers_install
-  chown root:root $PKG/usr/arm-linux-gnu
+  # install kernel headers 3.x (EVIOCGPROP definition was added in 3.x)
+  make -C $SRC/linux-3.1.10 ARCH=arm mrproper
+  make -C $SRC/linux-3.1.10 ARCH=arm headers_check
+  make -C $SRC/linux-3.1.10 ARCH=arm INSTALL_HDR_PATH=$PKG/usr/$target headers_install
+  chown root:root $PKG/usr/$target
 
-  # glibc-ports
-  mv $SRC/glibc-ports-$version $SRC/glibc-$version/ports 
+  # install glibc-ports
+  mv $SRC/glibc-ports-${version%.*} $SRC/glibc-$version/ports 
 
-  # glibc
+  # glibc patches
   sed -e 's/-lgcc_eh//g' -e 's/manual//' -i $SRC/glibc-$version/Makeconfig
   patch -p0 -i $SRC/fix-versions-in-configure.patch
 
@@ -37,16 +39,16 @@ __EOF__
   unset CXXFLAGS
 
   BUILD_CC="gcc" \
-  CC="arm-linux-gnu-gcc" \
-  AR="arm-linux-gnu-ar" \
-  RANLIB="arm-linux-gnu-ranlib" \
+  CC="$target-gcc" \
+  AR="$target-ar" \
+  RANLIB="$target-ranlib" \
   ../glibc-$version/configure \
-    --host=arm-linux-gnu \
+    --host=$target \
     --build=$(echo $MACHTYPE | sed "s/$(echo $MACHTYPE | cut -d- -f2)/cross/") \
-    --prefix=/usr/arm-linux-gnu \
-    --libexecdir=/usr/arm-linux-gnu/lib \
-    --with-binutils=/usr/arm-linux-gnu/bin \
-    --with-headers=$PKG/usr/arm-linux-gnu/include \
+    --prefix=/usr/$target \
+    --libexecdir=/usr/$target/lib \
+    --with-binutils=/usr/$target/bin \
+    --with-headers=$PKG/usr/$target/include \
     --cache-file=config.cache \
     --enable-kernel=2.6.0 \
     --disable-profile \
@@ -54,14 +56,17 @@ __EOF__
     --with-tls \
     --with-__thread
 
-  # Versions of GNU make newer than 4.4 trigger a hang in versions of glibc older than 2.31
+  # versions of GNU make newer than 4.4 trigger a hang in versions of glibc older than 2.31
   make43
   make43 install_root=$PKG install
 
-  rm -rf $PKG/usr/arm-linux-gnu/share/{info,local}
+  # cleanup
+  rm -rf $PKG/usr/$target/share
+	find $PKG -name "*install.cmd" -delete
+	find $PKG -name ".\install" -delete
 
   # strip binaries manually since strip command from host cannot handle target binaries
-  arm-linux-gnu-strip --strip-debug $PKG/usr/arm-linux-gnu/lib/*.a
+  $target-strip --strip-debug $PKG/usr/$target/lib/*.a
   find $PKG -type f -name '*.so' ! -name libc.so ! -name libpthread.so \
-  | xargs arm-linux-gnu-strip
+  | xargs $target-strip
 }

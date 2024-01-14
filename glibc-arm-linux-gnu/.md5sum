@@ -1,4 +1,4 @@
-0fe9f1d76f8a92c5387aa651a7281231  fix-versions-in-configure.patch
-2c990f97e9ff9fb1c3c85fe826e991b9  glibc-2.11.tar.bz2
+3657d79d54a23d3e48efecc46dd3a29d  fix-versions-in-configure.patch
+2072b7cc9c6bbe88e16622e274026df6  glibc-2.11.3.tar.xz
 4856ad0f54a83fc3c1a9b5d3c820a230  glibc-ports-2.11.tar.bz2
-260551284ac224c3a43c4adac7df4879  linux-2.6.32.tar.bz2
+3649bdaa50ffd9114cc16486ec54d83a  linux-3.1.10.tar.bz2
