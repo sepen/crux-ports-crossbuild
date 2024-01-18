@@ -4,6 +4,7 @@ d:gcc-arm-linux-gnu
 d:binutils-arm-linux-gnueabi
 d:make43
 d:glibc-arm-linux-gnu
+d:libgmp-arm-linux-gnu
 f:0415cf8579b1c1792283a4bdfa815082:binutils-arm-linux-gnu/Pkgfile
 f:afd334fe41b52c63df08ffbd40a3778c:binutils-arm-linux-gnu/.footprint
 f:7766f57e1627c36c9cb99a3e827feec0:binutils-arm-linux-gnu/.md5sum
@@ -26,4 +27,7 @@ f:982d9b18577ee064728443994d465058:glibc-arm-linux-gnu/.footprint
 f:89cea6d3f23d1236ac13301a5bee3798:glibc-arm-linux-gnu/.nostrip
 f:9ab180682fad8065c298489cca36f709:glibc-arm-linux-gnu/.md5sum
 f:3657d79d54a23d3e48efecc46dd3a29d:glibc-arm-linux-gnu/fix-versions-in-configure.patch
+f:a5fe4481320f640b7d945319ac653b78:libgmp-arm-linux-gnu/Pkgfile
+f:7d000136da07014e852f0bdefc09f5e5:libgmp-arm-linux-gnu/.footprint
+f:5d729b581eb58943708b0a9f2b8ccc7b:libgmp-arm-linux-gnu/.md5sum
 f:706ea6120529bce6ccf022b38a29564d:crossbuild.httpup
