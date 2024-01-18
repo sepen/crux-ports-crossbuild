@@ -1,0 +1,30 @@
+# Description: Free library for arbitrary precision arithmetic for arm-linux-gnu
+# URL: https://gmplib.org/
+
+name=libgmp-arm-linux-gnu
+version=6.3.0
+release=1
+source=(https://gmplib.org/download/gmp/gmp-$version.tar.xz)
+
+target=arm-linux-gnu
+
+build() {
+  cd gmp-$version
+
+  unset CFLAGS
+  unset CXXFLAGS
+  
+  CPPFLAGS="-fexceptions" \
+  ./configure \
+  	--prefix=/usr/$target \
+    --enable-cxx \
+    --host=$target
+
+  make
+  make DESTDIR=$PKG install
+  rm -r $PKG/usr/$target/share
+
+  # strip binaries manually since strip command from host cannot handle target binaries
+  $target-strip --strip-debug $PKG/usr/$target/lib/*.a
+  $target-strip --strip-unneeded $PKG/usr/$target/lib/*.so*
+}
