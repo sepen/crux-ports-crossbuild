@@ -75,3 +75,5 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-size
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-strings
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-strip
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/libiberty.h

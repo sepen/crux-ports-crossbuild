@@ -1,11 +1,15 @@
-# Description: GNU Binutils for target arm-linux-gnu
+# Description: GNU Binutils for crosscompiling target arm-linux-gnu
 # URL: https://sources.redhat.com/binutils/
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: zlib
 
 name=binutils-arm-linux-gnu
-version=2.23.1
+version=2.23.2
 release=1
 source=(ftp://ftp.gnu.org/gnu/binutils/binutils-$version.tar.bz2)
+
+target=arm-linux-gnu
 
 build() {
   # We don't have makeinfo, so don't try to build documentation.
@@ -18,14 +22,14 @@ build() {
   unset CXXFLAGS
 
   AR=ar AS=as \
-  ../binutils-$version/configure \
-      --host=$(echo $MACHTYPE | sed "s/$(echo $MACHTYPE | cut -d- -f2)/cross/") \
-      --target=arm-linux-gnu \
+  $SRC/binutils-$version/configure \
+      --host=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/') \
+      --target=$target \
       --prefix=/usr \
+      --nfp \
       --enable-shared \
       --disable-nls \
       --disable-werror \
-      --nfp \
       --disable-multilib
 
   make configure-host
@@ -33,4 +37,5 @@ build() {
   make DESTDIR=$PKG install
 
   rm -rf $PKG/usr/share $PKG/usr/lib
+  install -D -m 0644 $SRC/binutils-$version/include/libiberty.h $PKG/usr/include/libiberty.h
 }
