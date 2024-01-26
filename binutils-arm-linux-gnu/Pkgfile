@@ -1,15 +1,16 @@
-# Description: GNU Binutils for crosscompiling target arm-linux-gnu
+# Description: Cross Binutils for target arm-linux-gnu
 # URL: https://sources.redhat.com/binutils/
 # Maintainer: CRUX System Team, core-ports at crux dot nu
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: zlib
+# Depends on: libmpc zlib
 
 name=binutils-arm-linux-gnu
 version=2.23.2
 release=1
 source=(ftp://ftp.gnu.org/gnu/binutils/binutils-$version.tar.bz2)
 
-target=arm-linux-gnu
+_target=arm-linux-gnu
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
 
 build() {
   # We don't have makeinfo, so don't try to build documentation.
@@ -23,9 +24,9 @@ build() {
 
   AR=ar AS=as \
   $SRC/binutils-$version/configure \
-      --host=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/') \
-      --target=$target \
-      --prefix=/usr \
+      --target=$_target \
+      --prefix=/usr/$_host \
+      --with-sysroot=/usr/$_target \
       --nfp \
       --enable-shared \
       --disable-nls \
