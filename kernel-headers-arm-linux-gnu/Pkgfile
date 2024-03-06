@@ -1,0 +1,15 @@
+# Description: Linux kernel headers for target arm-linux-gnu
+# URL: http://www.kernel.org/
+
+name=kernel-headers-arm-linux-gnu
+version=3.10.13
+release=1
+source=(https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-$version.tar.bz2)
+
+_target=arm-linux-gnu
+
+build() {
+  make -C $SRC/linux-$version ARCH=arm mrproper
+  make -C $SRC/linux-$version ARCH=arm headers_check
+  make -C $SRC/linux-$version ARCH=arm INSTALL_HDR_PATH=$PKG/usr/$_target/sysroot/usr headers_install
+}
