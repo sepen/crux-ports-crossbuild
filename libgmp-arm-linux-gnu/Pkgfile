@@ -1,30 +1,36 @@
-# Description: Free library for arbitrary precision arithmetic for arm-linux-gnu
-# URL: https://gmplib.org/
+# Description:
+# URL:
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Depends on: kernel-headers-arm-linux-gnu
 
 name=libgmp-arm-linux-gnu
 version=6.3.0
 release=1
-source=(https://gmplib.org/download/gmp/gmp-$version.tar.xz)
+source=(https://ftp.gnu.org/gnu/gmp/gmp-$version.tar.xz \
+        fix-armv4-flags.patch)
 
-target=arm-linux-gnu
+_target=arm-linux-gnu
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
 
 build() {
-  cd gmp-$version
+  patch -p0 -i $SRC/fix-armv4-flags.patch
 
-  unset CFLAGS
-  unset CXXFLAGS
-  
-  CPPFLAGS="-fexceptions" \
-  ./configure \
-  	--prefix=/usr/$target \
-    --enable-cxx \
-    --host=$target
+  mkdir $SRC/build
+  cd $SRC/build
+
+  export CPPFLAGS="-fexceptions"
+
+  ../gmp-$version/configure \
+    --build=$_crosshost \
+    --prefix=/usr/$_target
 
   make
   make DESTDIR=$PKG install
-  rm -r $PKG/usr/$target/share
 
-  # strip binaries manually since strip command from host cannot handle target binaries
-  $target-strip --strip-debug $PKG/usr/$target/lib/*.a
-  $target-strip --strip-unneeded $PKG/usr/$target/lib/*.so*
+  rm -rf $PKG/usr/$_target/share
+
+  #find $PKG -type f -name '*.la' | while read f; do
+  #  sed -i "s|-L$SRC[^ ]* ||g" $f
+  #done
 }

@@ -1,0 +1,26 @@
+diff -purN gmp-6.3.0.orig/configure gmp-6.3.0/configure
+--- gmp-6.3.0.orig/configure	2023-07-29 15:42:22.000000000 +0200
++++ gmp-6.3.0/configure	2024-03-07 01:27:08.024327469 +0100
+@@ -4285,8 +4285,8 @@ echo "include_mpn(\`alpha/default.m4')"
+       armsa1 | arm7t* | arm9t* | armv4t*)
+ 	path="arm"
+ 	gcc_cflags_arch="-march=armv4"
+-	;;
+-      arm1156 | armv6t2*)
++  ;;
++	   arm1156 | armv6t2*)
+ 	path="arm/v6t2 arm/v6 arm/v5 arm"
+ 	gcc_cflags_arch="-march=armv6t2"
+ 	;;
+@@ -4427,9 +4427,8 @@ echo "include_mpn(\`alpha/default.m4')"
+       *)
+ 	path="arm"
+ 	gcc_cflags_arch="-march=armv4"
+-
+-echo "define(<NOTHUMB>,1)" >> $gmp_tmpconfigm4
+-
++  gcc_cflags_fpmode="-mabi=apcs-gnu -mfloat-abi=soft"
++  echo "define(<NOTHUMB>,1)" >> $gmp_tmpconfigm4
+ 	;;
+     esac
+     ;;
