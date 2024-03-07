@@ -58,6 +58,11 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/ldscripts/
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/ldscripts/armelfb_linux.xsw
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/ldscripts/armelfb_linux.xu
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/ldscripts/armelfb_linux.xw
+-rw-r--r--	root/root	usr/arm-linux-gnu/lib/libiberty.a
+drwxr-xr-x	root/root	usr/arm-linux-gnu/sysroot/
+drwxr-xr-x	root/root	usr/arm-linux-gnu/sysroot/usr/
+drwxr-xr-x	root/root	usr/arm-linux-gnu/sysroot/usr/include/
+-rw-r--r--	root/root	usr/arm-linux-gnu/sysroot/usr/include/libiberty.h
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-addr2line
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-ar
@@ -75,22 +80,21 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-size
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-strings
 -rwxr-xr-x	root/root	usr/bin/arm-linux-gnu-strip
-drwxr-xr-x	root/root	usr/include/
--rw-r--r--	root/root	usr/include/libiberty.h
-drwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/
-drwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/
-drwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/include/
--rw-r--r--	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/include/ansidecl.h
--rw-r--r--	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/include/bfd.h
--rw-r--r--	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/include/bfdlink.h
--rw-r--r--	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/include/dis-asm.h
--rw-r--r--	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/include/symcat.h
-drwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/
--rwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libbfd-2.23.2.so
--rw-r--r--	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libbfd.a
--rwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libbfd.la
-lrwxrwxrwx	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libbfd.so -> libbfd-2.23.2.so
--rwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libopcodes-2.23.2.so
--rw-r--r--	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libopcodes.a
--rwxr-xr-x	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libopcodes.la
-lrwxrwxrwx	root/root	usr/x86_64-unknown-linux-gnu/arm-linux-gnu/lib/libopcodes.so -> libopcodes-2.23.2.so
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/
+drwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/
+drwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/
+-rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/ansidecl.h
+-rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/bfd.h
+-rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/bfdlink.h
+-rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/dis-asm.h
+-rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/symcat.h
+drwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/
+-rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd-2.23.2.so
+-rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd.a
+-rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd.la
+lrwxrwxrwx	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd.so -> libbfd-2.23.2.so
+-rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes-2.23.2.so
+-rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes.a
+-rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes.la
+lrwxrwxrwx	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes.so -> libopcodes-2.23.2.so
