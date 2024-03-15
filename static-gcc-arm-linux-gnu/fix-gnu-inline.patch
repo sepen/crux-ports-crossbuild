@@ -1,0 +1,32 @@
+diff -purN gcc-4.7.4.orig/gcc/cp/cfns.gperf gcc-4.7.4/gcc/cp/cfns.gperf
+--- gcc-4.7.4.orig/gcc/cp/cfns.gperf	2009-04-21 21:03:23.000000000 +0200
++++ gcc-4.7.4/gcc/cp/cfns.gperf	2024-03-03 21:37:28.711536579 +0100
+@@ -21,8 +21,12 @@ __inline
+ #endif
+ static unsigned int hash (const char *, unsigned int);
+ #ifdef __GNUC__
++#ifdef __GNUC_STDC_INLINE__
++__attribute__ ((__gnu_inline__))
++#else
+ __inline
+ #endif
++#endif
+ const char * libc_name_p (const char *, unsigned int);
+ %}
+ %%
+diff -purN gcc-4.7.4.orig/gcc/cp/cfns.h gcc-4.7.4/gcc/cp/cfns.h
+--- gcc-4.7.4.orig/gcc/cp/cfns.h	2009-04-21 21:03:23.000000000 +0200
++++ gcc-4.7.4/gcc/cp/cfns.h	2024-03-03 21:57:39.861534209 +0100
+@@ -52,8 +52,12 @@ __inline
+ #endif
+ static unsigned int hash (const char *, unsigned int);
+ #ifdef __GNUC__
++#ifdef __GNUC_STDC_INLINE__
++__attribute__ ((__gnu_inline__))
++#else
+ __inline
+ #endif
++#endif
+ const char * libc_name_p (const char *, unsigned int);
+ /* maximum key range = 391, duplicates = 0 */
+ 

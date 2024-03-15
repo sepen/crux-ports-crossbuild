@@ -1,2 +1,1 @@
-^usr/lib/gcc/arm-linux-gnu/4.4.2/libgcc.a$
-^usr/lib/gcc/arm-linux-gnu/4.4.2/libgcov.a$
+^.*$
