@@ -29,8 +29,4 @@ build() {
   make DESTDIR=$PKG install
 
   rm -rf $PKG/usr/$_target/share
-
-  #find $PKG -type f -name '*.la' | while read f; do
-  #  sed -i "s|-L$SRC[^ ]* ||g" $f
-  #done
 }
