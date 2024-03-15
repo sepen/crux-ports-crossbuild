@@ -1,7 +1,5 @@
 # Description:
 # URL:
-# Maintainer: CRUX System Team, core-ports at crux dot nu
-# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: kernel-headers-arm-linux-gnu
 
 name=libgmp-arm-linux-gnu

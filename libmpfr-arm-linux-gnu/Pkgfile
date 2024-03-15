@@ -1,5 +1,3 @@
-# Maintainer: CRUX System Team, core-ports at crux dot nu
-# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: libgmp-arm-linux-gnu
 
 name=libmpfr-arm-linux-gnu

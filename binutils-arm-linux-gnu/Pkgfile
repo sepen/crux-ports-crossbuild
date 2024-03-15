@@ -1,7 +1,5 @@
 # Description: Cross Binutils for target arm-linux-gnu
 # URL: https://sources.redhat.com/binutils/
-# Maintainer: CRUX System Team, core-ports at crux dot nu
-# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: libmpc-arm-linux-gnu
 
 name=binutils-arm-linux-gnu
