@@ -1,30 +1,28 @@
-# Description: C library for target arm-linux-gnu
+# Description: Cross glibc C library for target arm-linux-gnu
 # URL: http://www.gnu.org/software/libc/
-# Depends on: binutils-arm-linux-gnu static-gcc-arm-linux-gnu make43
+# Depends on: static-gcc-arm-linux-gnu make43 kernel-headers-arm-linux-gnu
 
 name=glibc-arm-linux-gnu
 version=2.11.3
 release=1
 source=(https://ftp.gnu.org/gnu/glibc/glibc-$version.tar.xz \
         https://ftp.gnu.org/gnu/glibc/glibc-ports-${version%.*}.tar.bz2 \
-        https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.1.10.tar.bz2 \
         fix-versions-in-configure.patch)
 
-target=arm-linux-gnu
+# Triplet target for ARMv4
+_target=arm-linux-gnu
+# In the process of building the cross-compilation toolchain a local toolchain is also created.
+# To avoid confusion with any existing native compilation tools the "triplet" for this toolchain
+# has the word "cross" embedded into it
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
 
 build() {
-  # install kernel headers 3.x (EVIOCGPROP definition was added in 3.x)
-  make -C $SRC/linux-3.1.10 ARCH=arm mrproper
-  make -C $SRC/linux-3.1.10 ARCH=arm headers_check
-  make -C $SRC/linux-3.1.10 ARCH=arm INSTALL_HDR_PATH=$PKG/usr/$target headers_install
-  chown root:root $PKG/usr/$target
-
   # install glibc-ports
-  mv $SRC/glibc-ports-${version%.*} $SRC/glibc-$version/ports 
+  mv $SRC/glibc-ports-${version%.*} $SRC/glibc-$version/ports
 
   # glibc patches
   sed -e 's/-lgcc_eh//g' -e 's/manual//' -i $SRC/glibc-$version/Makeconfig
-  patch -p0 -i $SRC/fix-versions-in-configure.patch
+  cd $SRC && patch -p0 -i $SRC/fix-versions-in-configure.patch
 
   mkdir $SRC/build
   cd $SRC/build
@@ -38,35 +36,32 @@ __EOF__
   unset CFLAGS
   unset CXXFLAGS
 
-  BUILD_CC="gcc" \
-  CC="$target-gcc" \
-  AR="$target-ar" \
-  RANLIB="$target-ranlib" \
-  ../glibc-$version/configure \
-    --host=$target \
-    --build=$(echo $MACHTYPE | sed "s/$(echo $MACHTYPE | cut -d- -f2)/cross/") \
-    --prefix=/usr/$target \
-    --libexecdir=/usr/$target/lib \
-    --with-binutils=/usr/$target/bin \
-    --with-headers=$PKG/usr/$target/include \
-    --cache-file=config.cache \
-    --enable-kernel=2.6.0 \
-    --disable-profile \
-    --enable-add-ons \
+  export BUILD_CC="gcc"
+  export CC="$_target-static-gcc"
+  export AR="$_target-ar"
+  export RANLIB="$_target-ranlib"
+  export PATH=/usr/$_target/bin:$PATH
+
+  $SRC/glibc-$version/configure \
+    --build=$_crosshost \
+    --host=$_target \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/glibc \
+    --with-binutils=/usr/$_target/bin \
+    --with-headers=/usr/$_target/sysroot/usr/include \
+    --with-__thread \
     --with-tls \
-    --with-__thread
+    --disable-profile \
+    --enable-kernel=2.6.0 \
+    --enable-add-ons \
+    --cache-file=config.cache
 
   # versions of GNU make newer than 4.4 trigger a hang in versions of glibc older than 2.31
   make43
-  make43 install_root=$PKG install
+  make43 install_root=$PKG/usr/$_target/sysroot install
 
   # cleanup
-  rm -rf $PKG/usr/$target/share
-	find $PKG -name "*install.cmd" -delete
-	find $PKG -name ".\install" -delete
-
-  # strip binaries manually since strip command from host cannot handle target binaries
-  $target-strip --strip-debug $PKG/usr/$target/lib/*.a
-  find $PKG -type f -name '*.so' ! -name libc.so ! -name libpthread.so \
-  | xargs $target-strip
+  rm -rf $PKG/usr/$_target/share
+  find $PKG -name "*install.cmd" -delete
+  find $PKG -name ".\install" -delete
 }
