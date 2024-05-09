@@ -27,6 +27,7 @@ f:e34336ad00fd1032e27fa6aef4af13a7:gcc-arm-linux-gnu/.footprint
 f:08b778ed781719b21be71877d3311825:gcc-arm-linux-gnu/.md5sum
 f:0cda1ce69c63038bd4cf1e8f20558954:gcc-arm-linux-gnu/Pkgfile
 f:89cea6d3f23d1236ac13301a5bee3798:gcc-arm-linux-gnu/.nostrip
+f:804f504ae58979336fdfb1cdea48f360:gcc-arm-linux-gnu/fix-gnu-inline.patch
 f:759edb808af68579f90d366319fb3ed6:libmpc-arm-linux-gnu/.footprint
 f:b48f69fceb50584ec17b005888d31565:libmpc-arm-linux-gnu/.md5sum
 f:282697c1d206dd0512d199ab9ba9354f:libmpc-arm-linux-gnu/Pkgfile
