@@ -12,12 +12,14 @@ build() {
   mkdir $SRC/build
   cd $SRC/build
 
-	unset CFLAGS CXXFLAGS
-	export LDFLAGS="-Wl,-rpath,/usr/$_target/lib"
+  unset CFLAGS
+  unset CXXFLAGS
 
-	$SRC/mpc-$version/configure \
-		--prefix=/usr/$_target \
-		--with-gmp=/usr/$_target \
+  export LDFLAGS="-Wl,-rpath,/usr/$_target/lib"
+
+  ../mpc-$version/configure \
+    --prefix=/usr/$_target \
+    --with-gmp=/usr/$_target \
     --with-mpfr=/usr/$_target
 
   make
