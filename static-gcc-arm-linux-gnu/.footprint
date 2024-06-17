@@ -1,7 +1,9 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/arm-linux-gnu/
 drwxr-xr-x	root/root	usr/arm-linux-gnu/bin/
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/bin/arm-linux-gnu-static-c++
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/bin/arm-linux-gnu-static-cpp
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/bin/arm-linux-gnu-static-g++
 lrwxrwxrwx	root/root	usr/arm-linux-gnu/bin/arm-linux-gnu-static-gcc -> /usr/arm-linux-gnu/bin/arm-linux-gnu-static-gcc-4.7.4
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/bin/arm-linux-gnu-static-gcc-4.7.4
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/bin/arm-linux-gnu-static-gcov
@@ -11,6 +13,7 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/
 drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/
 drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/cc1
+-rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/cc1plus
 -rwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/collect2
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/crtbegin.o
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/crtbeginS.o
@@ -105,6 +108,9 @@ drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/includ
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/coretypes.h
 drwxr-xr-x	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/cp/
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/cp/cp-tree.def
+-rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/cp/cp-tree.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/cp/cxx-pretty-print.h
+-rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/cp/name-lookup.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/cppdefault.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/cpplib.h
 -rw-r--r--	root/root	usr/arm-linux-gnu/lib/gcc/arm-linux-gnu/4.7.4/plugin/include/debug.h

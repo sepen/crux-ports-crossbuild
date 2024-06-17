@@ -18,9 +18,8 @@ build() {
   mkdir $SRC/build
   cd $SRC/build
 
-  unset CFLAGS
-  unset CXXFLAGS
-
+  export CFLAGS="-fgnu89-inline"
+  export CXXFLAGS="-fgnu89-inline"
   export LDFLAGS="-Wl,-rpath,/usr/$_target/lib"
   export AR=ar
   export MAKEFLAGS="-j1"
@@ -36,10 +35,11 @@ build() {
     --with-gmp=/usr/$_target \
     --with-mpfr=/usr/$_target \
     --with-mpc=/usr/$_target \
-    --with-newlib \
     --with-abi=apcs-gnu \
+    --with-newlib \
     --without-fp \
     --without-headers \
+    --disable-bootstrap \
     --disable-decimal-float \
     --disable-libgomp \
     --disable-libmudflap \
@@ -48,7 +48,7 @@ build() {
     --disable-nls \
     --disable-shared \
     --disable-threads \
-    --enable-languages=c \
+    --enable-languages=c,c++ \
     --enable-obsolete
 
   make all-gcc all-target-libgcc
