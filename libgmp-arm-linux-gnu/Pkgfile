@@ -5,23 +5,24 @@
 name=libgmp-arm-linux-gnu
 version=6.3.0
 release=1
-source=(https://ftp.gnu.org/gnu/gmp/gmp-$version.tar.xz \
-        fix-armv4-flags.patch)
+source=(https://ftp.gnu.org/gnu/gmp/gmp-$version.tar.xz)
 
 _target=arm-linux-gnu
 _crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
 
 build() {
-  patch -p0 -i $SRC/fix-armv4-flags.patch
-
   mkdir $SRC/build
   cd $SRC/build
+
+  unset CFLAGS
+  unset CXXFLAGS
 
   export CPPFLAGS="-fexceptions"
 
   ../gmp-$version/configure \
     --build=$_crosshost \
-    --prefix=/usr/$_target
+    --prefix=/usr/$_target \
+    --enable-cxx
 
   make
   make DESTDIR=$PKG install
