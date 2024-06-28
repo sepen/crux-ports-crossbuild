@@ -1,3 +1,5 @@
+# Description: C library for multiple-precision floating-point computations with correct rounding
+# URL: https://www.mpfr.org/
 # Depends on: libgmp-arm-linux-gnu
 
 name=libmpfr-arm-linux-gnu
@@ -15,9 +17,8 @@ build() {
   unset CFLAGS
   unset CXXFLAGS
 
-  export LDFLAGS="-Wl,-rpath,/usr/$_target/lib"
-
-  $SRC/mpfr-$version/configure \
+  LDFLAGS="-Wl,-rpath,/usr/$_target/lib" \
+  ../mpfr-$version/configure \
     --prefix=/usr/$_target \
     --enable-shared \
     --with-gmp=/usr/$_target
