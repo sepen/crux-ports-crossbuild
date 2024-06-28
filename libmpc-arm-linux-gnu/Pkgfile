@@ -1,3 +1,5 @@
+# Description: C library for the arithmetic of complex numbers
+# URL: http://www.multiprecision.org/
 # Depends on: libmpfr-arm-linux-gnu
 
 name=libmpc-arm-linux-gnu
@@ -15,8 +17,7 @@ build() {
   unset CFLAGS
   unset CXXFLAGS
 
-  export LDFLAGS="-Wl,-rpath,/usr/$_target/lib"
-
+  LDFLAGS="-Wl,-rpath,/usr/$_target/lib" \
   ../mpc-$version/configure \
     --prefix=/usr/$_target \
     --with-gmp=/usr/$_target \
