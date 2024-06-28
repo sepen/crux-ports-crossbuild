@@ -21,19 +21,18 @@ build() {
   unset CFLAGS
   unset CXXFLAGS
 
-  export AR=ar
-  export AS=as
-
-  $SRC/binutils-$version/configure \
-      --build=$_crosshost \
-      --target=$_target \
-      --prefix=/usr \
-      --with-sysroot=/usr/$_target/sysroot \
-      --without-fp \
-      --enable-shared \
-      --disable-nls \
-      --disable-multilib \
-      --disable-werror
+  AR=ar \
+  AS=as \
+  ../binutils-$version/configure \
+    --build=$_crosshost \
+    --target=$_target \
+    --prefix=/usr \
+    --with-sysroot=/usr/$_target/sysroot \
+    --nfp \
+    --enable-shared \
+    --disable-nls \
+    --disable-multilib \
+    --disable-werror
 
   make configure-host
   make
