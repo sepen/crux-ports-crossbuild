@@ -1,6 +1,6 @@
 # arm-linux-gnu
 
-## Dependency tree
+## Ports Dependency tree
 
 ```
 gcc-arm-linux-gnu
@@ -23,15 +23,14 @@ gcc-arm-linux-gnu
   - https://gcc.gnu.org/gcc-4.7/changes.html
 
 - Support on ARM for the legacy floating-point accelerator (FPA) and the mixed-endian floating-point format that it used has been obsoleted.
-- The ports that still use this format have been obsoleted as well.
-- Many legacy ARM ports already provide an alternative that uses the VFP floating-point format.
-- The arm*-*-linux-gnu ports will be deleted in the next release.
-
+- The GCC ports that still use this format have been obsoleted as well.
+- Many legacy GCC ports for ARM already provide an alternative that uses the VFP floating-point format.
+- The `arm*-*-linux-gnu` ports will be deleted in the next release.
 - The configure script requires and additional flag in order to compile:
-> *** Configuration arm-unknown-linux-gnu is obsolete.
-> *** Specify --enable-obsolete to build it anyway.
-> *** Support will be REMOVED in the next major release of GCC,
-> *** unless a maintainer comes forward.
+  > *** Configuration arm-unknown-linux-gnu is obsolete.
+  > *** Specify --enable-obsolete to build it anyway.
+  > *** Support will be REMOVED in the next major release of GCC,
+  > *** unless a maintainer comes forward.
 
 
 ## Notes about Glibc
