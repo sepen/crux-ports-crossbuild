@@ -90,11 +90,11 @@ drwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/
 -rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/dis-asm.h
 -rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/include/symcat.h
 drwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/
--rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd-2.23.2.so
+-rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd-2.22.so
 -rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd.a
 -rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd.la
-lrwxrwxrwx	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd.so -> libbfd-2.23.2.so
--rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes-2.23.2.so
+lrwxrwxrwx	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libbfd.so -> libbfd-2.22.so
+-rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes-2.22.so
 -rw-r--r--	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes.a
 -rwxr-xr-x	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes.la
-lrwxrwxrwx	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes.so -> libopcodes-2.23.2.so
+lrwxrwxrwx	root/root	usr/x86_64-cross-linux-gnu/arm-linux-gnu/lib/libopcodes.so -> libopcodes-2.22.so

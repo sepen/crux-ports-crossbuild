@@ -3,7 +3,7 @@
 # Depends on: libmpc-arm-linux-gnu
 
 name=binutils-arm-linux-gnu
-version=2.23.2
+version=2.22
 release=1
 source=(ftp://ftp.gnu.org/gnu/binutils/binutils-$version.tar.bz2)
 
