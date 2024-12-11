@@ -6,22 +6,22 @@ name=gcc-arm-linux-gnu
 version=4.7.4
 release=1
 source=(https://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.bz2 \
-        fix-gnu-inline.patch)
+        gcc-fix-gnu-inline.patch)
 
 _target=arm-linux-gnu
 _crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
 
 build() {
-  patch -p0 -i $SRC/fix-gnu-inline.patch
+  patch -p0 -i $SRC/gcc-fix-gnu-inline.patch
   sed -i 's|REVISION|REVISION " (CRUX-ARM)"|' $SRC/gcc-$version/gcc/version.c
 
   mkdir $SRC/build
   cd $SRC/build
 
   unset CC
-  unset CFLAGS
   unset CXXFLAGS
 
+  export CFLAGS="-fgnu89-inline"
   export LDFLAGS="-Wl,-rpath,/usr/$_target/lib"
   export AR=ar
   export MAKEFLAGS="-j1"
@@ -30,33 +30,30 @@ build() {
     --build=$_crosshost \
     --host=$_crosshost \
     --target=$_target \
-    --prefix=/usr \
-    --libexecdir=/usr/lib \
+    --prefix=/usr/$_target \
+    --libexecdir=/usr/$_target/lib \
     --with-sysroot=/usr/$_target/sysroot \
     --with-gmp=/usr/$_target \
     --with-mpfr=/usr/$_target \
     --with-mpc=/usr/$_target \
     --with-abi=apcs-gnu \
-    --without-fp \
     --without-headers \
-    --disable-decimal-float \
-    --disable-libgomp \
-    --disable-libmudflap \
-    --disable-libssp \
+    --disable-bootstrap \
     --disable-multilib \
     --disable-nls \
-    --disable-shared \
-    --disable-threads \
+    --enable-shared \
+    --enable-threads=posix \
     --enable-__cxa_atexit \
     --enable-c99 \
     --enable-long-long \
     --enable-languages=c,c++ \
     --enable-obsolete
 
-  make
+  make AS_FOR_TARGET="$_target-as" LD_FOR_TARGET="$_target-ld"
   make DESTDIR=$PKG install
 
+  # cleanup
   rm -rf $PKG/usr/share
-  rm $PKG/usr/lib/libiberty.a
-  rm $PKG/usr/bin/$_target-gcc-{ar,nm,ranlib}
+  rm $PKG/usr/$_target/lib/libiberty.a
+  rm $PKG/usr/$_target/bin/$_target-gcc-{ar,nm,ranlib}
 }

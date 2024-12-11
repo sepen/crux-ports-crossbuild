@@ -7,13 +7,9 @@ version=2.11.3
 release=1
 source=(https://ftp.gnu.org/gnu/glibc/glibc-$version.tar.xz \
         https://ftp.gnu.org/gnu/glibc/glibc-ports-${version%.*}.tar.bz2 \
-        fix-versions-in-configure.patch)
+        glibc-fix-versions-in-configure.patch)
 
-# Triplet target for ARMv4
 _target=arm-linux-gnu
-# In the process of building the cross-compilation toolchain a local toolchain is also created.
-# To avoid confusion with any existing native compilation tools the "triplet" for this toolchain
-# has the word "cross" embedded into it
 _crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
 
 build() {
@@ -21,16 +17,18 @@ build() {
   mv $SRC/glibc-ports-${version%.*} $SRC/glibc-$version/ports
 
   # glibc patches
+  patch -p0 -d $SRC -i $SRC/glibc-fix-versions-in-configure.patch
   sed -e 's/-lgcc_eh//g' -e 's/manual//' -i $SRC/glibc-$version/Makeconfig
-  cd $SRC && patch -p0 -i $SRC/fix-versions-in-configure.patch
 
   mkdir $SRC/build
   cd $SRC/build
 
   cat > config.cache << __EOF__
-libc_cv_forced_unwind=yes
+ac_cv_sizeof_long_double=0
 libc_cv_c_cleanup=yes
+libc_cv_forced_unwind=yes
 libc_cv_gnu89_inline=yes
+libc_cv_ssp=no
 __EOF__
 
   unset CFLAGS
@@ -42,7 +40,7 @@ __EOF__
   export RANLIB="$_target-ranlib"
   export PATH=/usr/$_target/bin:$PATH
 
-  $SRC/glibc-$version/configure \
+  ../glibc-$version/configure \
     --build=$_crosshost \
     --host=$_target \
     --prefix=/usr \
@@ -51,14 +49,21 @@ __EOF__
     --with-headers=/usr/$_target/sysroot/usr/include \
     --with-__thread \
     --with-tls \
-    --disable-profile \
+    --without-selinux \
     --enable-kernel=2.6.0 \
     --enable-add-ons \
+    --enable-obsolete-rpc \
+    --disable-sanity-checks \
+    --disable-profile \
     --cache-file=config.cache
 
   # versions of GNU make newer than 4.4 trigger a hang in versions of glibc older than 2.31
-  make43
+  make43 PARALLELMFLAGS="-j $(nproc)"
   make43 install_root=$PKG/usr/$_target/sysroot install
+
+  cp -v $SRC/glibc-$version/sunrpc/rpc/*.h $PKG/usr/$_target/sysroot/usr/include/rpc
+  cp -v $SRC/glibc-$version/sunrpc/rpcsvc/*.h $PKG/usr/$_target/sysroot/usr/include/rpcsvc
+  cp -v $SRC/glibc-$version/nis/rpcsvc/*.h $PKG/usr/$_target/sysroot/usr/include/rpcsvc
 
   # cleanup
   rm -rf $PKG/usr/$_target/share
