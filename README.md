@@ -7,15 +7,19 @@ To use these ports, select a branch (for example 3.7) and download the `crossbui
 $ sudo wget -P /etc/ports https://raw.githubusercontent.com/sepen/crux-ports-crossbuild/3.7/crossbuild.httpup
 $ sudo ports -u crossbuild
 ```
+> Note: The version number 3.7 indicates that the ports can be built against a CRUX 3.7 base system.
+
+
+## Targets
 
 The goal of this repo is to maintain a list of ports useful for cross-compilation for different target systems,
 to facilitate tasks such as compiling kernels for small devices where native compilation is unsustainable and/or impossible.
 
-## Targets
+Available targets are:
 
-| GNU Triplet           | Binutils | Glibc  | GCC    | Kernel Headers | Min Kernel |
-| --------------------: | :------: | :----: | :----: | :------------: | :--------: |
-| `aarch64-linux-gnu`   |          |        |        |                |            |
-| `arm-linux-gnueabihf` |          |        |        |                |            |
-| `arm-linux-gnueabi`   | 2.39     | 2.36   | 12.3.0 | 3.2.75         | 3.2.75     |
-| `arm-linux-gnu`       | 2.23.1   | 2.11.3 | 4.7.4  | 3.1.10         | 2.6.0      |
+| GNU Triplet           | Binutils | GlibC  | GCC    | Linux Headers | Minimum Kernel |
+| --------------------: | :------: | :----: | :----: | :-----------: | :------------: |
+| `aarch64-linux-gnu`   |          |        |        |               |                |
+| `arm-linux-gnueabihf` |          |        |        |               |                |
+| `arm-linux-gnueabi`   | 2.39     | 2.36   | 12.3.0 | 3.2.75        | 3.2.75         |
+| `arm-linux-gnu`       | 2.23.1   | 2.11.3 | 4.7.4  | 3.1.10        | 2.6.0          |
