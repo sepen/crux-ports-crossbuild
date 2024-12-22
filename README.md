@@ -17,9 +17,9 @@ to facilitate tasks such as compiling kernels for small devices where native com
 
 Available targets are:
 
-| Arch  | GNU Triplet           | Binutils | GlibC  | GCC    | Linux Headers | Minimum Kernel |
-| --.-: | --------------------: | :------: | :----: | :----: | :-----------: | :------------: |
-| arm64 | `aarch64-linux-gnu`   | -        | -      | -      | -             | -              |
-| armhf | `arm-linux-gnueabihf` | 2.39     | 2.36   | 12.4.0 | 5.15.55       | 2.6.32         |
-| armel | `arm-linux-gnueabi`   | -        | -      | -      | -             | -              |
-| armv4 | `arm-linux-gnu`       | 2.23.1   | 2.11.3 | 4.7.4  | 3.1.10        | 2.6.0          |
+| GNU Triplet           | Binutils | GlibC  | GCC    | Linux Headers | Minimum Kernel |
+| --------------------: | :------: | :----: | :----: | :-----------: | :------------: |
+| `aarch64-linux-gnu`   | -        | -      | -      | -             | -              |
+| `arm-linux-gnueabihf` | 2.39     | 2.36   | 12.4.0 | 5.15.55       | 2.6.32         |
+| `arm-linux-gnueabi`   | -        | -      | -      | -             | -              |
+| `arm-linux-gnu`       | 2.23.1   | 2.11.3 | 4.7.4  | 3.1.10        | 2.6.0          |
