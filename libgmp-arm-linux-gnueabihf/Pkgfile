@@ -1,0 +1,31 @@
+# Description: Free library for arbitrary precision arithmetic
+# URL: https://gmplib.org/
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on: kernel-headers-arm-linux-gnueabihf
+
+name=libgmp-arm-linux-gnueabihf
+version=6.3.0
+release=1
+source=(https://ftp.gnu.org/gnu/gmp/gmp-$version.tar.xz)
+
+_target=arm-linux-gnueabihf
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
+
+build() {
+  mkdir $SRC/build
+  cd $SRC/build
+
+  unset CFLAGS
+  unset CXXFLAGS
+
+  CPPFLAGS="-fexceptions" \
+  ../gmp-$version/configure \
+    --build=$_crosshost \
+    --prefix=/usr/$_target \
+    --enable-cxx
+
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/$_target/share
+}
