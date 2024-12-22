@@ -1,0 +1,49 @@
+# Description: Cross Binutils for target arm-linux-gnueabihf
+# URL: https://sources.redhat.com/binutils/
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on: libmpc-arm-linux-gnueabihf
+
+name=binutils-arm-linux-gnueabihf
+version=2.39
+release=1
+source=(ftp://ftp.gnu.org/gnu/binutils/binutils-$version.tar.bz2)
+
+_target=arm-linux-gnueabihf
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
+
+build() {
+  # We don't have makeinfo, so don't try to build documentation.
+  sed -i '/^SUBDIRS/s/doc//' $SRC/binutils-$version/*/Makefile.in
+  #sed -i '/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/' $SRC/binutils-$version/libiberty/configure
+
+  mkdir build
+  cd build
+
+  unset CFLAGS
+  unset CXXFLAGS
+
+  AR=ar \
+  AS=as \
+  ../binutils-$version/configure \
+    --target=$_target \
+    --prefix=/usr/$_target \
+    --with-sysroot=/usr/$_target/sysroot \
+    --enable-shared \
+    --enable-ld=default \
+    --enable-gold=yes \
+    --disable-nls \
+    --disable-multilib
+
+  sed -e '/^MAKEINFO/s:=.*:= true:' -i Makefile
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share
+  #mv libiberty/libiberty.a $PKG/usr/$_target/lib
+  install -D -m 0644 $SRC/binutils-$version/include/libiberty.h \
+    $PKG/usr/$_target/sysroot/usr/include/libiberty.h
+
+  find $PKG -type f -name '*.la' | while read f; do
+    sed -i "s|-L$SRC[^ ]* ||g" $f
+  done
+}
