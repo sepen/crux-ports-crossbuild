@@ -1,0 +1,63 @@
+# Description: Static GCC compiler for target arm-linux-gnueabihf
+# URL: http://gcc.gnu.org
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on: binutils-arm-linux-gnueabihf kernel-headers-arm-linux-gnueabihf
+
+name=static-gcc-arm-linux-gnueabihf
+version=12.4.0
+release=1
+source=(https://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.xz)
+
+_target=arm-linux-gnueabihf
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
+
+build() {
+  mkdir $SRC/build
+  cd $SRC/build
+
+  unset CFLAGS
+  unset CXXFLAGS
+
+  AR=ar \
+  LDFLAGS="-Wl,-rpath,/usr/$_target/lib" \
+  ../gcc-$version/configure \
+    --build=$_crosshost \
+    --host=$_crosshost \
+    --target=$_target \
+    --prefix=/usr/$_target \
+    --program-prefix=$_target-static- \
+    --libexecdir=/usr/$_target/lib \
+    --with-pkgversion="CRUX-ARM (armhf)" \
+    --with-sysroot=/usr/$_target/sysroot \
+    --with-gmp=/usr/$_target \
+    --with-mpfr=/usr/$_target \
+    --with-mpc=/usr/$_target \
+    --with-abi=aapcs-linux \
+    --with-mode=arm \
+    --with-float=hard \
+    --with-newlib \
+    --without-headers \
+    --disable-decimal-float \
+    --disable-libgomp \
+    --disable-libmudflap \
+    --disable-libssp \
+    --disable-multilib \
+    --disable-nls \
+    --disable-shared \
+    --disable-threads \
+    --enable-languages=c \
+    --enable-__cxa_atexit \
+    --enable-symvers=gnu
+
+  make all-gcc all-target-libgcc
+  make DESTDIR=$PKG install-gcc install-target-libgcc
+
+  # cleanup
+  rm -r $PKG/usr/$_target/share
+  rm $PKG/usr/$_target/bin/$_target-static-gcc-{ar,nm,ranlib}
+
+  # fix program prefix
+  mv $PKG/usr/$_target/bin/$_target-gcc-$version $PKG/usr/$_target/bin/$_target-static-gcc-$version
+  rm $PKG/usr/$_target/bin/$_target-static-gcc
+  ln -sf /usr/$_target/bin/$_target-static-gcc-$version $PKG/usr/$_target/bin/$_target-static-gcc
+}
