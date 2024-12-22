@@ -1,0 +1,31 @@
+# Description: C library for multiple-precision floating-point computations with correct rounding
+# URL: https://www.mpfr.org/
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on: libgmp-arm-linux-gnueabihf
+
+name=libmpfr-arm-linux-gnueabihf
+version=4.2.1
+release=1
+source=(https://ftp.gnu.org/gnu/mpfr/mpfr-$version.tar.xz)
+
+_target=arm-linux-gnueabihf
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
+
+build() {
+  mkdir $SRC/build
+  cd $SRC/build
+
+  unset CFLAGS
+  unset CXXFLAGS
+
+  LDFLAGS="-Wl,-rpath,/usr/$_target/lib" \
+  ../mpfr-$version/configure \
+    --prefix=/usr/$_target \
+    --enable-shared \
+    --with-gmp=/usr/$_target
+
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/$_target/share
+}
