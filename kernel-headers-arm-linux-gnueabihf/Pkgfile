@@ -1,0 +1,17 @@
+# Description: Linux kernel headers for target arm-linux-gnueabihf
+# URL: http://www.kernel.org/
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on:
+
+name=kernel-headers-arm-linux-gnueabihf
+version=5.15.55
+release=1
+source=(https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-$version.tar.xz)
+
+_target=arm-linux-gnueabihf
+
+build() {
+  make -C $SRC/linux-$version mrproper
+  make -C $SRC/linux-$version ARCH=arm \
+    INSTALL_HDR_PATH=$PKG/usr/$_target/sysroot/usr headers_install
+}
