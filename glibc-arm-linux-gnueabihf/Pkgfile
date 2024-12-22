@@ -1,0 +1,54 @@
+# Description: Cross glibc C library for target arm-linux-gnueabihf
+# URL: http://www.gnu.org/software/libc/
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on: static-gcc-arm-linux-gnueabihf kernel-headers-arm-linux-gnueabihf
+
+name=glibc-arm-linux-gnueabihf
+version=2.36
+release=1
+source=(https://ftp.gnu.org/gnu/glibc/glibc-$version.tar.xz \
+  glibc-$version-1.patch)
+
+_target=arm-linux-gnueabihf
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
+
+build() {
+  mkdir $SRC/build
+  cd $SRC/build
+
+  patch -p1 -d $SRC/glibc-${version:0:4} -i $SRC/glibc-$version-1.patch
+  echo "libc_cv_forced_unwind=yes" > config.cache
+
+  export PATH=/usr/$_target/bin:$PATH
+
+  unset CFLAGS
+  unset CXXFLAGS
+
+  BUILD_CC="gcc" \
+  CC="$_target-static-gcc" \
+  CXX="$_target-static-gcc" \
+  AR="$_target-ar" \
+  RANLIB="$_target-ranlib" \
+  ../glibc-$version/configure \
+    --build=$_crosshost \
+    --host=$_target \
+    --prefix=/usr \
+    --disable-profile \
+    --enable-add-ons \
+    --enable-kernel=2.6.32 \
+    --enable-obsolete-rpc \
+    --with-__thread \
+    --with-tls \
+    --with-fp=yes \
+    --with-binutils=/usr/$_target/bin \
+    --with-headers=/usr/$_target/sysroot/usr/include \
+    --cache-file=config.cache
+
+  make
+  make install_root=$PKG/usr/$_target/sysroot install
+
+  # cleanup
+  rm -rf $PKG/usr/$_target/share
+  find $PKG -name "*install.cmd" -delete
+  find $PKG -name ".\install" -delete
+}

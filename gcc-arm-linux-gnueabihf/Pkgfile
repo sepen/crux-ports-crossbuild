@@ -1,0 +1,60 @@
+# Description: GCC compiler for target arm-linux-gnueabihf
+# URL: http://gcc.gnu.org
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on: glibc-arm-linux-gnueabihf
+
+name=gcc-arm-linux-gnueabihf
+version=12.4.0
+release=1
+source=(https://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.xz)
+
+_target=arm-linux-gnueabihf
+_crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
+
+build() {
+  mkdir $SRC/build
+  cd $SRC/build
+
+  export PATH=/usr/$_target/bin:$PATH
+
+  unset CC
+  unset CFLAGS
+  unset CXXFLAGS
+
+  AR=ar \
+  LDFLAGS="-Wl,-rpath,/usr/$_target/lib" \
+  ../gcc-$version/configure \
+    --build=$_crosshost \
+    --host=$_crosshost \
+    --target=$_target \
+    --prefix=/usr/$_target \
+    --libexecdir=/usr/$_target/lib \
+    --with-pkgversion="CRUX-ARM (armhf)" \
+    --with-sysroot=/usr/$_target/sysroot \
+    --with-gmp=/usr/$_target \
+    --with-mpfr=/usr/$_target \
+    --with-mpc=/usr/$_target \
+    --with-abi=aapcs-linux \
+    --with-mode=arm \
+    --with-float=hard \
+    --without-headers \
+    --disable-multilib \
+    --disable-nls \
+    --disable-libgomp \
+    --disable-libmudflap \
+    --disable-libssp \
+    --disable-bootstrap \
+    --disable-libstdcxx-pch \
+    --enable-__cxa_atexit \
+    --enable-languages=c,c++ \
+    --enable-shared \
+    --enable-threads=posix
+
+  make AS_FOR_TARGET="$_target-as" LD_FOR_TARGET="$_target-ld"
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/$_target/share
+  install -d $PKG/usr/$_target/sysroot/usr/lib
+  cp -va $SRC/build/$_target/libstdc++-v3/src/.libs/libstdc++.so* $PKG/usr/$_target/sysroot/usr/lib
+	cp -va $SRC/build/$_target/libgcc/libgcc_s.so* $PKG/usr/$_target/sysroot/usr/lib
+}

@@ -1,29 +1,25 @@
-# Description: Static GCC compiler for target arm-linux-gnu
+# Description: Static GCC compiler for target arm-linux-gnueabihf
 # URL: http://gcc.gnu.org
-# Depends on: binutils-arm-linux-gnu kernel-headers-arm-linux-gnu
+# Maintainer: Jose Beneyto, sepen at crux dot nu
+# Depends on: binutils-arm-linux-gnueabihf kernel-headers-arm-linux-gnueabihf
 
-name=static-gcc-arm-linux-gnu
-version=4.7.4
+name=static-gcc-arm-linux-gnueabihf
+version=12.4.0
 release=1
-source=(https://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.bz2 \
-        gcc-fix-gnu-inline.patch)
+source=(https://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.xz)
 
-_target=arm-linux-gnu
+_target=arm-linux-gnueabihf
 _crosshost=$(echo $MACHTYPE | sed 's/-[^-]*/-cross/')
 
 build() {
-  patch -p0 -i $SRC/gcc-fix-gnu-inline.patch
-  sed -i 's|REVISION|REVISION " (CRUX-ARM)"|' $SRC/gcc-$version/gcc/version.c
-
   mkdir $SRC/build
   cd $SRC/build
 
-  export CFLAGS="-fgnu89-inline"
-  export CXXFLAGS="-fgnu89-inline"
-  export LDFLAGS="-Wl,-rpath,/usr/$_target/lib"
-  export AR=ar
-  export MAKEFLAGS="-j1"
+  unset CFLAGS
+  unset CXXFLAGS
 
+  AR=ar \
+  LDFLAGS="-Wl,-rpath,/usr/$_target/lib" \
   ../gcc-$version/configure \
     --build=$_crosshost \
     --host=$_crosshost \
@@ -31,14 +27,16 @@ build() {
     --prefix=/usr/$_target \
     --program-prefix=$_target-static- \
     --libexecdir=/usr/$_target/lib \
+    --with-pkgversion="CRUX-ARM (armhf)" \
     --with-sysroot=/usr/$_target/sysroot \
     --with-gmp=/usr/$_target \
     --with-mpfr=/usr/$_target \
     --with-mpc=/usr/$_target \
-    --with-abi=apcs-gnu \
+    --with-abi=aapcs-linux \
+    --with-mode=arm \
+    --with-float=hard \
     --with-newlib \
     --without-headers \
-    --disable-bootstrap \
     --disable-decimal-float \
     --disable-libgomp \
     --disable-libmudflap \
@@ -47,8 +45,9 @@ build() {
     --disable-nls \
     --disable-shared \
     --disable-threads \
-    --enable-languages=c,c++ \
-    --enable-obsolete
+    --enable-languages=c \
+    --enable-__cxa_atexit \
+    --enable-symvers=gnu
 
   make all-gcc all-target-libgcc
   make DESTDIR=$PKG install-gcc install-target-libgcc
