@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/arm-linux-gnueabihf/
+drwxr-xr-x	root/root	usr/arm-linux-gnueabihf/include/
+-rw-r--r--	root/root	usr/arm-linux-gnueabihf/include/mpc.h
+drwxr-xr-x	root/root	usr/arm-linux-gnueabihf/lib/
+-rw-r--r--	root/root	usr/arm-linux-gnueabihf/lib/libmpc.a
+-rwxr-xr-x	root/root	usr/arm-linux-gnueabihf/lib/libmpc.la
+lrwxrwxrwx	root/root	usr/arm-linux-gnueabihf/lib/libmpc.so -> libmpc.so.3.3.1
+lrwxrwxrwx	root/root	usr/arm-linux-gnueabihf/lib/libmpc.so.3 -> libmpc.so.3.3.1
+-rwxr-xr-x	root/root	usr/arm-linux-gnueabihf/lib/libmpc.so.3.3.1
